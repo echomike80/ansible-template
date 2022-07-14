@@ -1,0 +1,9 @@
+---
+
+- name: Copy file1 to directory
+  template:
+    src: file1.txt.j2
+    dest: "{{ myfiles_file1_directory }}/file1.txt"
+    mode: 0644
+
+...

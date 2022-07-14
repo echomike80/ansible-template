@@ -1,0 +1,15 @@
+---
+
+- hosts: tier_web
+  gather_facts: True
+
+###############################################################################
+  tasks:
+
+  - name: do role myfiles
+    import_role:
+      name: myfiles
+    tags: 
+      - myfiles
+
+...
